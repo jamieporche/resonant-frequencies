@@ -57,6 +57,9 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# application.properties
+application.properties
+
 # macOS files
 .DS_Store
 
@@ -78,4 +81,3 @@ yarn-error.log*
 Network Trash Folder
 Temporary Items
 .apdisk
-resonant-frequencies-backend/src/main/resources/application.properties
