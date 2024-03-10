@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<header>
+		<header-component />
+	</header>
+	<div class="router-view">
+		<router-view />
+	</div>
+	<footer>
+		<footer-component class="footer-component" />
+	</footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderComponent from "./components/HeaderComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: 'App',
+	components: {
+		HeaderComponent,
+		FooterComponent
+	},
+};
 </script>
 
 <style>
+body {
+  background-image: url("./assets/resonant-frequencies-background.png");
+  background-size: 100vw;
+  margin: 0px;
+  min-height: 100vh;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.router-view {
+	flex: 1;
+}
+
+.footer-component {
+	margin-top: auto;
 }
 </style>
