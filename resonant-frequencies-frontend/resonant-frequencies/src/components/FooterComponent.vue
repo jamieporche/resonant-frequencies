@@ -1,6 +1,6 @@
 <template>
 	<div class="footer-container">
-		<div class="footer-container">
+		<div>
 			<h1 id="tagline">Voyage into your resonant frequencies</h1>
 		</div>
 		<div id="logo">
@@ -19,12 +19,12 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .footer-container {
 	border: none;
 	display: flex;
 	justify-content: flex-end;
-	background-color: #0d0b0e;
-	opacity: 50%;
+	background-color: rgba(13, 11, 14, 0.5);
 }
 
 #logo img {

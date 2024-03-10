@@ -18,8 +18,7 @@ export default {
 .header-container {
 	border: none;
 	display: flex;
-	background-color: #0d0b0e;
-	opacity: 50%;
+	background-color: rgba(13, 11, 14, 0.5);
 }
 #home {
 	display: flex;
